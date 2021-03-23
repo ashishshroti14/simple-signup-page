@@ -37,7 +37,7 @@ function Signup() {
 }
 
     const onFinish = (values) => {
-        console.log('Received values of form: ', values);
+        // console.log('Received values of form: ', values);
         // ReactDOM.render(
         //     <React.StrictMode>
         //       <Success />
@@ -82,7 +82,8 @@ function Signup() {
         remember: true,
       }}
       style = {{justifyItems: 'left',}}
-      onValuesChange = {(changedValues, values) =>{ console.log(changedValues, values) 
+      onValuesChange = {(changedValues, values) =>{ 
+        // console.log(changedValues, values) 
         setEmail(values.email)
         setAgreement(values.agreement)
     }}
